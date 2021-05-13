@@ -8,11 +8,11 @@
 puts "cleaning all database..."
 Flat.destroy_all
 puts "creating database"
-flat1 = { address: "AVENUE FLAT 1", description: "DESCRIPTION 1, DESCRIPTION 1, DESCRIPTION 1", stars: "1", price: "100" }
-flat2 = { address: "AVENUE FLAT 2", description: "DESCRIPTION 2, DESCRIPTION 2, DESCRIPTION 2", stars: "2", price: "200" }
-flat3 = { address: "AVENUE FLAT 3", description: "DESCRIPTION 3, DESCRIPTION 3, DESCRIPTION 3", stars: "3", price: "300" }
-flat4 = { address: "AVENUE FLAT 4", description: "DESCRIPTION 4, DESCRIPTION 4, DESCRIPTION 4", stars: "4", price: "400" }
-flat5 = { address: "AVENUE FLAT 5", description: "DESCRIPTION 5, DESCRIPTION 5, DESCRIPTION 5", stars: "5", price: "500" }
+flat1 = { name: "NAME 1", address: "AVENUE FLAT 1", description: "DESCRIPTION 1, DESCRIPTION 1, DESCRIPTION 1", stars: "1", price: "100" }
+flat2 = { name: "NAME 2", address: "AVENUE FLAT 2", description: "DESCRIPTION 2, DESCRIPTION 2, DESCRIPTION 2", stars: "2", price: "200" }
+flat3 = { name: "NAME 3", address: "AVENUE FLAT 3", description: "DESCRIPTION 3, DESCRIPTION 3, DESCRIPTION 3", stars: "3", price: "300" }
+flat4 = { name: "NAME 4", address: "AVENUE FLAT 4", description: "DESCRIPTION 4, DESCRIPTION 4, DESCRIPTION 4", stars: "4", price: "400" }
+flat5 = { name: "NAME 5", address: "AVENUE FLAT 5", description: "DESCRIPTION 5, DESCRIPTION 5, DESCRIPTION 5", stars: "5", price: "500" }
 Flats = []
 [flat1, flat2, flat3, flat4, flat5].each_with_index do |attributes, index|
 flat = Flat.create!(attributes)

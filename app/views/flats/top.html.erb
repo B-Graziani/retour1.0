@@ -1,6 +1,4 @@
-<h1>ALL FLATS</h1>
-<br>
-<%= link_to "HOME", root_path %>
+<h1>BEST FLATS</h1>
 <ul>
   <% @flats.each do |flat| %>
   <li>
@@ -10,5 +8,4 @@
 </ul>
 <%= link_to "ADD NEW FLAT", new_flat_path %>
 <br>
-<%= link_to "BEST FLATS", top_flats_path %>
-
+<%= link_to "RETOUR", flats_path %>
