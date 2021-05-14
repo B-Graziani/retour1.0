@@ -4,8 +4,26 @@
 <h2><%= @flat.stars %></h2>
 <h2><%= @flat.price %></h2>
 <br>
+<%= link_to "NEW REVIEW", new_flat_review_path(@flat) %>
+<br>
+<ul>
+  <% @flat.reviews.each do |review| %>
+  <li>
+    <%= review.content %>
+    <%= link_to "DELETE", review, method: :delete, data: { confirm: "are you sure ?"} %>
+  </li>
+  <% end %>
+</ul>
+<br>
 <%= link_to "EDIT", edit_flat_path(@flat) %>
 <br>
 <%= link_to "DELETE", flat_path(@flat), method: :delete, data: { confirm: "are you sure ?" } %>
 <br>
 <%= link_to "RETOUR INDEX", flats_path %>
+
+
+
+
+
+
+

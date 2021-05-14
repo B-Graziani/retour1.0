@@ -1,0 +1,8 @@
+<h1>NEW REVIEW -- <%= @flat.name %> --</h1>
+<br>
+<%= simple_form_for [@flat, @review] do |f| %>
+<%= f.input :content %>
+<%= f.submit "SOUMETTRE" %>
+<% end %>
+<br>
+<%= link_to "RETOUR", flat_path(@flat) %>
